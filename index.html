@@ -10,6 +10,37 @@
         body { font-family: 'Pretendard', sans-serif; }
     </style>
 </head>
+<script>
+        // 팝업 열기 함수
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // 배경 스크롤 막기
+        }
+
+        // 팝업 닫기 함수
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // 스크롤 다시 허용
+        }
+
+        // 팝업 바깥 영역 클릭 시 닫기
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal-dacon');
+            if (event.target == modal) {
+                closeModal('modal-dacon');
+            }
+        }
+    </script>
+</body> ```
+
+### 적용 후 확인 방법
+1.  코드를 저장하고 파일을 브라우저에서 엽니다.
+2.  Dacon 프로젝트 카드의 **"자세히 보기 & 과정 읽기"** 버튼을 눌러보세요.
+3.  검은 배경과 함께 팝업창이 뜨고, 블로그에서 요약한 내용이 깔끔하게 보일 것입니다.
+
+이제 다시 Netlify에 폴더를 드래그해서 배포해 보세요!    
 <body class="bg-gray-50 text-gray-800">
 
     <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
@@ -202,4 +233,5 @@
 
 </body>
 </html>
+
 
