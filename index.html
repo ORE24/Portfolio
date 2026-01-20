@@ -73,38 +73,51 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 px-4">
+    <section id="projects" class="py-20 px-4 bg-gray-50">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
-                        Project Image 1
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col h-full">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+                        Dacon AI Challenge
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">개인 일정 관리 앱</h3>
-                        <p class="text-gray-600 mb-4 text-sm">React와 Firebase를 사용하여 만든 실시간 일정 관리 애플리케이션입니다.</p>
-                        <div class="flex gap-2 mb-4">
-                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">React</span>
-                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Firebase</span>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Dacon 제 2회 MAI 경진대회</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Top 33%</span>
                         </div>
-                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">자세히 보기 &rarr;</a>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">
+                            유전자 변이에 민감한 임베딩을 생성하는 GLM(Genomic Language Model) 개발 프로젝트입니다.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">PyTorch</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">NLP/GLM</span>
+                        </div>
+                        <button onclick="openModal('modal-dacon')" class="w-full mt-2 border border-blue-600 text-blue-600 font-semibold py-2 rounded hover:bg-blue-50 transition">
+                            자세히 보기 & 과정 읽기
+                        </button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
-                        Project Image 2
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col h-full">
+                    <div class="h-48 bg-gray-800 flex items-center justify-center text-gray-400">
+                        Voxel Engine Image
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">이커머스 대시보드</h3>
-                        <p class="text-gray-600 mb-4 text-sm">판매 데이터 시각화 및 재고 관리를 위한 관리자 대시보드입니다.</p>
-                        <div class="flex gap-2 mb-4">
-                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Vue.js</span>
-                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Chart.js</span>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">3D Voxel Engine Development</h3>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">
+                            React와 Three.js를 활용하여 웹에서 구동되는 마인크래프트 스타일의 복셀 엔진을 구현했습니다.
+                        </p>
+                        <div class="flex gap-2 mb-4 mt-auto">
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">React</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Three.js</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">WebGL</span>
                         </div>
-                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">자세히 보기 &rarr;</a>
+                        <a href="#" class="text-center w-full mt-2 block border border-gray-300 text-gray-600 font-semibold py-2 rounded hover:bg-gray-50 transition">
+                            준비 중
+                        </a>
                     </div>
                 </div>
 
@@ -112,6 +125,55 @@
         </div>
     </section>
 
+    <div id="modal-dacon" class="hidden fixed inset-0 bg-black/60 z-[100] flex items-center justify-center px-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-[fadeIn_0.3s_ease-out]">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center z-10">
+                <h3 class="text-xl font-bold text-gray-900">🧬 Dacon MAI 경진대회 회고</h3>
+                <button onclick="closeModal('modal-dacon')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+            </div>
+            
+            <div class="p-6 space-y-6 text-gray-700 leading-relaxed">
+                
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                    <ul class="space-y-1 text-sm">
+                        <li><strong>📅 기간:</strong> 25.11.19 ~ 25.11.30 (12일)</li>
+                        <li><strong>🏆 성과:</strong> 330팀 중 167위 (상위 33%)</li>
+                        <li><strong>🛠️ 환경:</strong> 군 복무 중 사지방(Colab Pro A100 활용)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">💡 프로젝트 개요</h4>
+                    <p class="text-sm">
+                        유전자 변이에 민감하게 반응하는 임베딩을 생성하기 위해 <strong>GLM(Genomic Language Model)</strong>을 파인튜닝하는 과제였습니다. Nucleotide Transformer 논문을 분석하고, 제한된 GPU 자원 내에서 효율적인 학습 파이프라인을 구축했습니다.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">🔥 문제 해결 과정</h4>
+                    <ul class="list-disc pl-5 text-sm space-y-2">
+                        <li><strong>도메인 지식 습득:</strong> 생명과학 지식(DNA, RNA, 코돈 등)이 부족했으나, 관련 논문과 자료를 단기간에 집중 학습하여 모델링에 적용했습니다.</li>
+                        <li><strong>코드 모듈화:</strong> 초기 'All-in-one' 스파게티 코드를 Dataset, EDA, Train, Inference로 기능별 분리하여 유지보수성을 높였습니다.</li>
+                        <li><strong>협업 커뮤니케이션:</strong> 선배와 팀을 이루어 진행하며, "40% 완성 시 피드백 공유" 원칙을 통해 빠른 의사결정을 진행했습니다.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">🚀 성장과 배운 점</h4>
+                    <p class="text-sm">
+                        군대라는 환경에 핑계 대지 않고, Colab Pro와 AI 툴(ChatGPT)을 적극 활용해 문제를 해결했습니다. 
+                        초기에 너무 복잡하게 접근하기보다, <strong>단순한 방법론부터 쌓아 올리는 것</strong>이 중요하다는 점을 배웠습니다.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="p-6 border-t bg-gray-50 text-right">
+                <a href="https://blog.naver.com/jack04itg257/224132798479" target="_blank" class="text-blue-600 font-semibold hover:underline text-sm mr-4">블로그 원문 보기 &rarr;</a>
+                <button onclick="closeModal('modal-dacon')" class="bg-gray-800 text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-700 transition">닫기</button>
+            </div>
+        </div>
+    </div>
     <section id="contact" class="bg-gray-900 text-white py-20 px-4">
         <div class="max-w-xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
@@ -140,3 +202,4 @@
 
 </body>
 </html>
+
