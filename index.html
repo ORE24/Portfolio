@@ -41,8 +41,7 @@
                 <p>📚 새로운 것을 공부하는데 거리낌 없는 개발자</p>
                 <p>🧩 문제 해결을 진심으로 좋아하는 개발자</p>
             </div>
-            
-            </div>
+        </div>
     </header>
 
     <section id="about" class="py-20 bg-white scroll-mt-28">
@@ -84,8 +83,11 @@
             <div class="grid md:grid-cols-2 gap-8">
                 
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col h-full">
-                    <div class="h-56 bg-gray-100 relative">
-                        <img src="dacon_project.jpg" alt="Dacon Project Model" class="w-full h-full object-cover">
+                    <div class="h-56 bg-gray-100 relative overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1000&auto=format&fit=crop" alt="DNA Structure" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-bold border border-white px-4 py-2 rounded-full">자세히 보기</span>
+                        </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-2">
@@ -98,7 +100,7 @@
                         <div class="flex flex-wrap gap-2 mb-4 mt-auto">
                             <span class="text-xs bg-gray-100 px-2 py-1 rounded">PyTorch</span>
                             <span class="text-xs bg-gray-100 px-2 py-1 rounded">NLP/GLM</span>
-                            </div>
+                        </div>
                         <button onclick="openModal('modal-dacon')" class="w-full mt-2 border border-blue-600 text-blue-600 font-semibold py-2 rounded hover:bg-blue-50 transition">
                             자세히 보기 & 회고
                         </button>
@@ -106,8 +108,11 @@
                 </div>
 
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col h-full">
-                    <div class="h-56 bg-gray-100 relative">
-                        <img src="jeju_project.jpg" alt="Jeju Project Graph" class="w-full h-full object-cover">
+                    <div class="h-56 bg-gray-100 relative overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1000&auto=format&fit=crop" alt="Renewable Energy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                             <span class="text-white font-bold border border-white px-4 py-2 rounded-full">자세히 보기</span>
+                        </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-2">
@@ -248,16 +253,15 @@
         function openModal(modalId) {
             const modal = document.getElementById(modalId);
             modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // 스크롤 막기
+            document.body.style.overflow = 'hidden'; 
         }
 
         function closeModal(modalId) {
             const modal = document.getElementById(modalId);
             modal.classList.add('hidden');
-            document.body.style.overflow = 'auto'; // 스크롤 허용
+            document.body.style.overflow = 'auto'; 
         }
 
-        // 팝업 바깥 영역 클릭 시 닫기
         window.onclick = function(event) {
             if (event.target.classList.contains('fixed')) {
                 event.target.classList.add('hidden');
