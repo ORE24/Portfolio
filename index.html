@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개발자 김코딩의 포트폴리오</title>
+    <title>개발자 포트폴리오</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <style>
@@ -39,29 +39,36 @@
             </div>
         </div>
     </header>
-    
-    
 
     <section id="about" class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-10 text-center">Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
-                    <h3 class="font-bold text-lg">Frontend</h3>
-                    <p class="text-gray-500 text-sm mt-2">React, Vue.js, Tailwind</p>
+            <h2 class="text-3xl font-bold mb-10 text-center">Profile & Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+                
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                    <h3 class="font-bold text-xl text-blue-600 mb-3">Languages</h3>
+                    <p class="text-gray-700 font-medium text-lg">Python, C</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
-                    <h3 class="font-bold text-lg">Backend</h3>
-                    <p class="text-gray-500 text-sm mt-2">Node.js, Python, Java</p>
+
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                    <h3 class="font-bold text-xl text-blue-600 mb-3">Libraries</h3>
+                    <p class="text-gray-700 font-medium text-lg">PyTorch, NumPy, Pandas</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
-                    <h3 class="font-bold text-lg">Database</h3>
-                    <p class="text-gray-500 text-sm mt-2">MySQL, MongoDB</p>
+
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                    <h3 class="font-bold text-xl text-blue-600 mb-3">Problem Solving</h3>
+                    <p class="text-gray-700 font-medium text-lg">백준(BOJ) 골드 5</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
-                    <h3 class="font-bold text-lg">Tools</h3>
-                    <p class="text-gray-500 text-sm mt-2">Git, Docker, AWS</p>
+
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                    <h3 class="font-bold text-xl text-blue-600 mb-3">Education & Status</h3>
+                    <div class="text-gray-700">
+                        <p class="font-bold text-lg mb-1">한성대학교 1학년 수료</p>
+                        <p class="text-sm text-gray-500 mb-2">(평점 4.29 / 4.5)</p>
+                        <p class="text-gray-600 font-medium">현재 군 복무 중 (2학년 복학 예정)</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -88,7 +95,7 @@
 
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100">
                     <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
-                         Project Image 2
+                        Project Image 2
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">이커머스 대시보드</h3>
@@ -105,15 +112,31 @@
         </div>
     </section>
 
-    <footer id="contact" class="bg-gray-900 text-white py-16 text-center">
-        <h2 class="text-2xl font-bold mb-6">함께 일하고 싶으신가요?</h2>
-        <p class="text-gray-400 mb-8">언제든 편하게 연락주세요.</p>
-        <a href="mailto:example@email.com" class="text-xl font-bold text-blue-400 hover:text-blue-300 transition">example@email.com</a>
-        
-        <div class="mt-12 text-gray-500 text-sm">
-            &copy; 2024 Kim Coding. All rights reserved.
+    <section id="contact" class="bg-gray-900 text-white py-20 px-4">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            
+            <form name="contact" method="POST" data-netlify="true" class="space-y-4 text-left">
+                <div>
+                    <label class="block text-sm mb-1 text-gray-400">이름</label>
+                    <input type="text" name="name" class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white" placeholder="홍길동" required>
+                </div>
+                <div>
+                    <label class="block text-sm mb-1 text-gray-400">이메일</label>
+                    <input type="email" name="email" class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white" placeholder="email@example.com" required>
+                </div>
+                <div>
+                    <label class="block text-sm mb-1 text-gray-400">메시지</label>
+                    <textarea name="message" rows="4" class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white" placeholder="메시지를 입력해주세요..." required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition">보내기</button>
+            </form>
+            
+            <div class="mt-12 text-gray-500 text-sm">
+                &copy; 2024 Kim Coding. All rights reserved.
+            </div>
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>
