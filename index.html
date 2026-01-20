@@ -88,4 +88,213 @@
                         <img src="https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=1000&auto=format&fit=crop" alt="Digital DNA Structure" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     
-                    <div class="p-6 flex flex-
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">유전체 변이 예측 AI 개발</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Top 33%</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">
+                            유전자 변이에 민감한 임베딩을 생성하는 GLM(Genomic Language Model) 개발 프로젝트입니다.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">PyTorch</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">NLP/GLM</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Competition</span>
+                        </div>
+                        
+                        <button class="w-full mt-2 border border-blue-600 text-blue-600 font-semibold py-2 rounded hover:bg-blue-50 transition">
+                            자세히 보기 & 회고
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col h-full cursor-pointer" onclick="openModal('modal-oibc')">
+                    <div class="h-56 bg-gray-100 relative overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1000&auto=format&fit=crop" alt="Renewable Energy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    </div>
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">제주 전력 가격(SMP) 예측</h3>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">Top 12.5%</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">
+                            재생에너지 증가로 인한 제주도의 전력 가격 변동 및 마이너스 가격 발생을 예측하는 시계열 모델링입니다.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">XGBoost</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Time Series</span>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded">Competition</span>
+                        </div>
+
+                        <button class="w-full mt-2 border border-orange-500 text-orange-600 font-semibold py-2 rounded hover:bg-orange-50 transition">
+                            자세히 보기 & 회고
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="py-20 bg-white scroll-mt-28 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center">Interests</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">AI Agent</h3>
+                    <p class="text-gray-500 text-sm">Autonomous Systems & LLM Agents</p>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">Quant</h3>
+                    <p class="text-gray-500 text-sm">Algorithmic Trading & Data Analysis</p>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-lg transition hover:-translate-y-1">
+                    <div class="text-4xl mb-4">🧊</div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">3D Vision & Reconstruction</h3>
+                    <p class="text-gray-500 text-sm">3D Reconstruction & Spatial AI</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-dacon" class="hidden fixed inset-0 bg-black/60 z-[100] flex items-center justify-center px-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-[fadeIn_0.3s_ease-out]">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center z-10">
+                <h3 class="text-xl font-bold text-gray-900">🧬 Dacon MAI 경진대회 회고</h3>
+                <button onclick="closeModal('modal-dacon')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+            </div>
+            
+            <div class="p-6 space-y-6 text-gray-700 leading-relaxed">
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 text-sm space-y-1">
+                    <p>📅 <strong>기간:</strong> 25.11.19 ~ 25.11.30 (12일)</p>
+                    <p>🏆 <strong>성과:</strong> 330팀 중 167위 (상위 33%)</p>
+                    <p>👤 <strong>역할:</strong> 개인 참가 (데이터 전처리부터 모델링까지 단독 수행), 프로젝트 막바지에 팀을 이루어 진행</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">💡 프로젝트 개요</h4>
+                    <p class="mb-3 text-sm">
+                        유전자 변이에 민감하게 반응하는 임베딩을 생성하기 위해 <strong>GLM(Genomic Language Model)</strong>을 파인튜닝하는 과제였습니다. Nucleotide Transformer 논문을 분석하고, 제한된 GPU 자원 내에서 효율적인 학습 파이프라인을 구축했습니다.
+                    </p>
+                    <div class="bg-gray-100 p-3 rounded-lg border border-gray-200">
+                        <h5 class="font-bold text-sm text-gray-800 mb-1">⚙️ 모델 핵심 구조</h5>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Nucleotide Transformer(500M)를 Backbone으로 사용하고, <strong>IA³(PEFT)</strong> 기법과 <strong>512bp 시퀀스 확장</strong>을 적용하여 효율성과 문맥 파악 능력을 극대화했습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">🔥 문제 해결 과정</h4>
+                    <ul class="list-disc pl-5 text-sm space-y-2">
+                        <li><strong>도메인 지식 습득:</strong> 생명과학 지식(DNA, RNA 등)이 부족했으나, 관련 논문과 자료를 단기간에 집중 학습하여 모델링에 적용했습니다.</li>
+                        <li><strong>코드 모듈화:</strong> 초기 'All-in-one' 스파게티 코드를 Dataset, EDA, Train, Inference로 기능별 분리하여 유지보수성을 높였습니다.</li>
+                        <li><strong>협업 커뮤니케이션:</strong> 선배와 팀을 이루어 진행하며, "40% 완성 시 피드백 공유" 원칙을 통해 빠른 의사결정을 진행했습니다.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">🚀 성장과 배운 점</h4>
+                    <p class="text-sm mb-2">실험을 설계할 때 다음 3가지가 중요하다는 점을 배웠습니다:</p>
+                    <ol class="list-decimal pl-5 text-sm space-y-1 font-medium bg-gray-50 p-3 rounded-lg border border-gray-100">
+                        <li>가설의 인과관계를 명확히 하기</li>
+                        <li>실험들의 중요도를 정하기 (Priority)</li>
+                        <li>주어진 시간과 자원을 고려하여 계획하기</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="p-6 border-t bg-gray-50 text-right">
+                <button onclick="closeModal('modal-dacon')" class="bg-gray-800 text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-700 transition">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-oibc" class="hidden fixed inset-0 bg-black/60 z-[100] flex items-center justify-center px-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-[fadeIn_0.3s_ease-out]">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center z-10">
+                <h3 class="text-xl font-bold text-gray-900">⚡ 제주 전력 가격(SMP) 예측 챌린지</h3>
+                <button onclick="closeModal('modal-oibc')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+            </div>
+            
+            <div class="p-6 space-y-6 text-gray-700 leading-relaxed">
+                <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 text-sm space-y-1">
+                    <p>📅 <strong>기간:</strong> 24.10.26 ~ 24.11.15 (3주)</p>
+                    <p>🏆 <strong>성과:</strong> 200명 중 25위 (상위 12.5%)</p>
+                    <p>🛠️ <strong>역할:</strong> 개인 참가 (데이터 전처리부터 모델링까지 단독 수행)</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">💡 프로젝트 개요</h4>
+                    <p class="mb-3 text-sm">
+                        재생에너지 비율이 높은 제주도 전력 시장에서 발생하는 <strong>'덕 커브(Duck Curve)'</strong> 현상과 마이너스 전기가격을 고려하여, 하루 전 가격(SMP)을 예측하는 시계열 모델을 개발했습니다.
+                    </p>
+                    <div class="bg-gray-100 p-3 rounded-lg border border-gray-200">
+                        <h5 class="font-bold text-sm text-gray-800 mb-1">⚙️ 모델 핵심 구조</h5>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            <strong>XGBoost</strong> 모델에 <strong>푸리에 변환(주기성)</strong>과 파생 변수(Lag, 새벽 시간 등)를 적용했으며, <strong>TimeSeriesSplit</strong> 교차 검증으로 과적합을 방지했습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">🔥 문제 해결 과정</h4>
+                    <ul class="list-disc pl-5 text-sm space-y-2">
+                        <li><strong>도메인 분석:</strong> 낮 시간에 가격이 급락하는 원인이 태양광 발전량(자외선 지수 등)과 연관됨을 파악하고 핵심 Feature로 선정했습니다.</li>
+                        <li><strong>Feature Engineering:</strong> 단순 날짜 데이터를 Cos/Sin 주기로 변환하고, '새벽 시간(is_dawn)' 등의 파생 변수를 생성해 예측력을 높였습니다.</li>
+                        <li><strong>성능 최적화:</strong> GridSearch를 통해 최적의 하이퍼파라미터를 탐색하고, 이상치에 민감한 RMSE를 목적 함수로 사용하여 오차를 줄였습니다.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg text-gray-900 mb-2">🚀 성장과 배운 점</h4>
+                    <p class="text-sm">
+                        단순한 모델링을 넘어 'Grid Parity'와 같은 전력 시장의 구조적 문제를 이해하고 데이터로 풀어내는 End-to-End 경험을 쌓았습니다. 혼자서 A부터 Z까지 수행하며 머신러닝 프로세스 전반에 대한 자신감을 얻었습니다.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="p-6 border-t bg-gray-50 text-right">
+                <button onclick="closeModal('modal-oibc')" class="bg-gray-800 text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-700 transition">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-12 text-center scroll-mt-28">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-xl font-bold mb-4">DevPortfolio</h2>
+            <p class="text-gray-400 text-sm">
+                &copy; 2026 Kim Coding. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; 
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('fixed')) {
+                event.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
